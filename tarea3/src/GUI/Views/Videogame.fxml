@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controlers.VideogameControler">
+    <children>
+        <Text layoutX="243.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Videojuegos" textAlignment="CENTER" wrappingWidth="133.3831024169922">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Label layoutX="32.0" layoutY="58.0" text="SKU:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSKU" layoutX="82.0" layoutY="53.0" promptText="Introduzca el SKU" />
+        <Label layoutX="30.0" layoutY="107.0" text="Título:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtTitle" layoutX="82.0" layoutY="103.0" promptText="Introduzca el Título" />
+        <Label layoutX="34.0" layoutY="150.0" text="Año:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtYear" layoutX="82.0" layoutY="146.0" promptText="Introduzca el Año" />
+        <Label layoutX="301.0" layoutY="58.0" text="Edición:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtEdition" layoutX="373.0" layoutY="53.0" promptText="Introduzca la Edición" />
+        <Label layoutX="287.0" layoutY="107.0" text="Clasificación:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtRating" layoutX="376.0" layoutY="103.0" promptText="Introduzca la Clasificación" />
+        <Label layoutX="299.0" layoutY="150.0" text="Consola:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtConsole" layoutX="376.0" layoutY="146.0" promptText="Introduzca la Consola" />
+        <Button fx:id="btnFirst" layoutX="107.0" layoutY="227.0" mnemonicParsing="false" onAction="#clickFirst" text="|&lt;" />
+        <Button fx:id="btnPrevious" layoutX="162.0" layoutY="227.0" mnemonicParsing="false" onAction="#clickPrevious" text="&lt;&lt;" />
+        <Label fx:id="counter" alignment="CENTER" layoutX="269.0" layoutY="227.0" prefHeight="27.0" prefWidth="82.0" text="0/0" />
+        <Button fx:id="btnNext" layoutX="419.0" layoutY="227.0" mnemonicParsing="false" onAction="#clickNext" text="&gt;&gt;" />
+        <Button fx:id="btnLast" layoutX="477.0" layoutY="227.0" mnemonicParsing="false" onAction="#clickLast" text="&gt;|" />
+        <Button fx:id="btnAdd" layoutX="192.0" layoutY="279.0" mnemonicParsing="false" onAction="#clickAdd" text="Agregar" />
+        <Button fx:id="btnEdit" layoutX="285.0" layoutY="279.0" mnemonicParsing="false" onAction="#clickEdit" text="Editar" />
+        <Button fx:id="btnRemove" layoutX="367.0" layoutY="279.0" mnemonicParsing="false" onAction="#clickRemove" text="Borrar" />
+        <Button fx:id="btnAccept" layoutX="239.0" layoutY="339.0" mnemonicParsing="false" onAction="#clickAccept" text="Aceptar" />
+        <Button fx:id="btnCancel" layoutX="326.0" layoutY="339.0" mnemonicParsing="false" onAction="#clickCancel" text="Cancelar" />
+    </children>
+</AnchorPane>
